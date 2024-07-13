@@ -31,6 +31,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <OutDir>$(ProjectDir)bin\Debug\Win32\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -38,12 +39,14 @@
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <OutDir>$(ProjectDir)bin\Release\Win32\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <OutDir>$(ProjectDir)bin\Debug\x64\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -51,6 +54,7 @@
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <OutDir>$(ProjectDir)bin\Release\x64\</OutDir>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -127,21 +131,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="lexer.c" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="parser.c" />
+    <ClCompile Include="src/lexer/lexer.c" />
+    <ClCompile Include="src/main.cpp" />
+    <ClCompile Include="src/parser/parser.c" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="lexer.l">
+    <CustomBuild Include="spec/lexer.l">
       <FileType>Document</FileType>
-      <Command>win_flex --nounistd -o $(ProjectDir)lexer.c $(ProjectDir)lexer.l</Command>
-      <Outputs>$(ProjectDir)lexer.c</Outputs>
+      <Command>win_flex --nounistd -o $(ProjectDir)src/lexer/lexer.c $(ProjectDir)spec/lexer.l</Command>
+      <Outputs>$(ProjectDir)src/lexer/lexer.c</Outputs>
       <Message>Generating lexer.c from lexer.l</Message>
     </CustomBuild>
-    <CustomBuild Include="parser.y">
+    <CustomBuild Include="spec/parser.y">
       <FileType>Document</FileType>
-      <Command>win_bison -d -o $(ProjectDir)parser.c $(ProjectDir)parser.y</Command>
-      <Outputs>$(ProjectDir)parser.c;$(ProjectDir)parser.h</Outputs>
+      <Command>win_bison -d -o $(ProjectDir)src/parser/parser.c $(ProjectDir)spec/parser.y</Command>
+      <Outputs>$(ProjectDir)src/parser/parser.c;$(ProjectDir)src/parser/parser.h</Outputs>
       <Message>Generating parser.c and parser.h from parser.y</Message>
     </CustomBuild>
   </ItemGroup>

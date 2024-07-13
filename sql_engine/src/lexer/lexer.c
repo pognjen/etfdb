@@ -1,11 +1,11 @@
-#line 1 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.c"
+#line 1 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\src/lexer/lexer.c"
 #define _CRT_NONSTDC_NO_DEPRECATE
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "parser.h"
+#include "../parser/parser.h"
 
-#line 8 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.c"
+#line 8 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\src/lexer/lexer.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -525,9 +525,9 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 1 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 
-#line 530 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.c"
+#line 530 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\src/lexer/lexer.c"
 
 #define INITIAL 0
 
@@ -736,10 +736,10 @@ YY_DECL
 		}
 
 	{
-#line 17 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 17 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 
 
-#line 742 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.c"
+#line 742 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\src/lexer/lexer.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -798,187 +798,187 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 19 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 19 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return CREATE; }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 20 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 20 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return TABLE; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 21 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 21 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return INSERT; }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 22 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 22 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return INTO; }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 23 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 23 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return SELECT; }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 24 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 24 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return FROM; }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 25 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 25 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return WHERE; }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 26 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 26 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return GROUP; }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 27 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 27 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return BY; }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 28 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 28 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return ORDER; }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 29 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 29 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return DROP; }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 30 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 30 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return MIN; }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 31 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 31 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return MAX; }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 32 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 32 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return SUM; }
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 33 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 33 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return COUNT; }
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 34 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 34 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return TOP; }
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 35 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 35 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return INT32; }
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 36 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 36 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return STRING; }
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 37 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 37 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return BOOL; }
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 38 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 38 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return EQ; }
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 39 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 39 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return GT; }
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 40 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 40 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return GE; }
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 41 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 41 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return LT; }
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 42 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 42 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return LE; }
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 43 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 43 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return NE; }
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 44 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 44 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return STAR; }
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 45 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 45 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return LPAREN; }
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 46 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 46 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return RPAREN; }
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 47 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 47 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { return COMMA; }
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 48 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 48 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { yylval.intval = atoi(yytext); return INT_VALUE; }
 	YY_BREAK
 case 31:
 /* rule 31 can match eol */
 YY_RULE_SETUP
-#line 49 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 49 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { yylval.strval = strdup(yytext); return STRING_VALUE; }
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 50 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 50 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { yylval.boolval = (strcmp(yytext, "true") == 0); return BOOL_VALUE; }
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 51 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 51 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { yylval.strval = strdup(yytext); return IDENTIFIER; }
 	YY_BREAK
 case 34:
 /* rule 34 can match eol */
 YY_RULE_SETUP
-#line 52 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 52 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { /* skip whitespace */ }
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 53 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 53 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 { /* skip unrecognized characters */ }
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 54 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 54 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 ECHO;
 	YY_BREAK
-#line 981 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.c"
+#line 981 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\src/lexer/lexer.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1983,7 +1983,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 54 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\lexer.l"
+#line 54 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/lexer.l"
 
 
 int yywrap() {

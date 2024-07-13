@@ -35,8 +35,8 @@
    especially those whose name start with YY_ or yy_.  They are
    private implementation details that can be changed or removed.  */
 
-#ifndef YY_YY_D_FAKS_DIPLOMSKI_SQL_ENGINE_SQL_ENGINE_PARSER_H_INCLUDED
-# define YY_YY_D_FAKS_DIPLOMSKI_SQL_ENGINE_SQL_ENGINE_PARSER_H_INCLUDED
+#ifndef YY_YY_D_FAKS_DIPLOMSKI_SQL_ENGINE_SQL_ENGINE_SRC_PARSER_PARSER_H_INCLUDED
+# define YY_YY_D_FAKS_DIPLOMSKI_SQL_ENGINE_SQL_ENGINE_SRC_PARSER_PARSER_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -95,13 +95,13 @@ extern int yydebug;
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 union YYSTYPE
 {
-#line 9 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\parser.y"
+#line 9 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/parser.y"
 
     int intval;
     char *strval;
     int boolval;
 
-#line 105 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\parser.h"
+#line 105 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\src/parser/parser.h"
 
 };
 typedef union YYSTYPE YYSTYPE;
@@ -116,4 +116,4 @@ extern YYSTYPE yylval;
 int yyparse (void);
 
 
-#endif /* !YY_YY_D_FAKS_DIPLOMSKI_SQL_ENGINE_SQL_ENGINE_PARSER_H_INCLUDED  */
+#endif /* !YY_YY_D_FAKS_DIPLOMSKI_SQL_ENGINE_SQL_ENGINE_SRC_PARSER_PARSER_H_INCLUDED  */

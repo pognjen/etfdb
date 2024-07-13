@@ -67,7 +67,7 @@
 
 
 /* First part of user prologue.  */
-#line 1 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\parser.y"
+#line 1 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/parser.y"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -75,7 +75,7 @@
 void yyerror(const char *s);
 int yylex();
 
-#line 79 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\parser.c"
+#line 79 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\src/parser/parser.c"
 
 # ifndef YY_CAST
 #  ifdef __cplusplus
@@ -1449,7 +1449,7 @@ yyreduce:
   switch (yyn)
     {
 
-#line 1453 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\parser.c"
+#line 1453 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\src/parser/parser.c"
 
       default: break;
     }
@@ -1673,7 +1673,7 @@ yyreturnlab:
   return yyresult;
 }
 
-#line 143 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\parser.y"
+#line 143 "D:\\FAKS\\DIPLOMSKI\\sql_engine\\sql_engine\\spec/parser.y"
 
 
 void yyerror(const char *s) {

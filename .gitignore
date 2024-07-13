@@ -2,3 +2,8 @@
 *.sln
 .vs/
 *.user
+*.obj
+*.tlog/
+*.idb
+*.ilk
+*.tlog

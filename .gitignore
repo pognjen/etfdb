@@ -7,3 +7,6 @@
 *.idb
 *.ilk
 *.tlog
+*.exe
+*.pdb
+*bin/
